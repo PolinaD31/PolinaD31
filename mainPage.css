@@ -1,0 +1,127 @@
+.grid {
+    display: grid;
+    grid-template-rows: 300px 90px 1fr 50px ;
+}
+
+header {
+    background-image: url("header2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: rgb(253, 249, 243);
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(138, 211, 102);
+    grid-row: 2;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 .7rem 1rem rgba(0,0,0,.1);
+}
+
+a:hover {
+    color:rgb(145, 156, 70);
+}
+
+.nav {
+    color: rgb(39, 64, 10);
+    padding: 10px;
+    font-size: 23px;
+}
+
+#mainPage {
+    font-weight: bold;
+}
+
+main {
+    grid-row: 3 / -1;
+}
+
+h2 {
+    font-size: 29px;
+    color: rgb(85, 58, 24);
+    margin: 5%;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(85, 58, 24);
+    margin: 5%;
+}
+
+p {
+    font-size: 19px;
+    color: rgb(85, 58, 24);
+    margin: 5%;
+}
+
+img {
+    width: 30%;
+}
+
+.flex {
+    display: flex;
+    justify-content:space-around;
+}
+
+
+footer {
+    grid-row: 4;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.validator {
+    height: 50px;
+    width: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 65px;
+        color: rgb(253, 249, 243);
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 39px;
+        color: rgb(85, 58, 24);
+        margin: 5%;
+    }
+
+    h3 {
+        font-size: 33px;
+        color: rgb(85, 58, 24);
+        margin: 5%;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    img {
+        width: 70%;
+    }
+    
+}
+
+
